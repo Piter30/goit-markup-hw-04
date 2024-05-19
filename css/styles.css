@@ -151,7 +151,7 @@ body {
   color: var(--ocean);
 }
 
-.after-main-menu-list::after {
+.main-menu-list::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -159,11 +159,10 @@ body {
   bottom: -1px;
   height: 4px;
   background-color: var(--ocean);
-  color: var(--ocean);
   border-radius: 2px;
 }
 
-.after-main-menu-list:nth-child(1) {
+.ul-main-menu-list > li:first-child .main-menu-list {
   color: #404bbf;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
