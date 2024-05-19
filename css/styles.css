@@ -152,7 +152,9 @@ body {
   color: var(--ocean);
 }
 
-.main-menu-list::after {
+.main-menu-list:hover::after,
+.main-menu-list:focus::after,
+.main-menu-list:active::after {
   content: "";
   width: 100%;
   position: absolute;
