@@ -44,6 +44,9 @@ ol {
 .header {
   border-bottom: 1px solid var(--cornflower);
   background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .container {
@@ -134,6 +137,7 @@ body {
   color: var(--navy-blue);
   padding: 24px 0;
   text-decoration: none;
+  position: relative;
 }
 
 .main-menu-list:hover {
@@ -148,6 +152,18 @@ body {
   color: var(--ocean);
 }
 
+.main-menu-list::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--ocean);
+  border-radius: 2px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .address {
   font-style: normal;
 }
@@ -158,6 +174,7 @@ body {
   color: var(--slate);
   padding: 24px 0;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list:hover {
