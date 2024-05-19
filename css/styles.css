@@ -137,7 +137,6 @@ body {
   color: var(--navy-blue);
   padding: 24px 0;
   text-decoration: none;
-  position: relative;
 }
 
 .main-menu-list:hover {
@@ -162,11 +161,12 @@ body {
   background-color: var(--ocean);
   color: var(--ocean);
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .after-main-menu-list:nth-child(1) {
   color: #404bbf;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -179,7 +179,6 @@ body {
   color: var(--slate);
   padding: 24px 0;
   text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list:hover {
