@@ -371,8 +371,7 @@ body {
 .section-our-portfolio-list {
   background-color: var(--white);
   width: calc((100% - 48px) / 3);
-  transition-timing-function: ease-out;
-  transition-duration: 500ms;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-our-portfolio-list:hover {
